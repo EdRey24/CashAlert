@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>Hello <?= first_name ?> <?= last_name ?>,</p>
+    <p>This is your weekly reminder that you still owe <strong><?= amount ?></strong> to the Class of 2024.</p>
+    <table style="border-collapse: collapse; width: 100%; height: 89.6px; border-width: 3px;" border="1"><colgroup><col style="width: 66.5254%;"><col style="width: 33.4746%;"></colgroup>
+    <tbody id="myTable">
+    <tr style="height: 22.4px;">
+    <td style="text-align: center; height: 22.4px; border-width: 3px;"><span style="font-size: 14pt;"><strong>Event</strong></span></td>
+    <td style="text-align: center; height: 22.4px; border-width: 3px;"><span style="font-size: 14pt;"><strong>Total</strong></span></td>
+    </tr>
+    <? for(var i=0; i < tableEntries.length; i++){ ?> <?!= weeklyTableEntries[i] ?> <?} ?>
+    <tr style="height: 22.4px;">
+    <td style="height: 22.4px; border-width: 3px;">&nbsp;</td>
+    <td style="height: 22.4px; text-align: right; border-width: 3px;"><strong><?= amount ?></strong></td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Please reply if you see that any of these values are incorrect. Otherwise, please bring in the money as soon as possible.</p>
+    <p>Best Regards,</p>
+    <p>Class of 2024 Student Council</p>
+  </body>
+</html>
